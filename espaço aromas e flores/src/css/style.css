@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); /*IMPORTA BIBLIOTECA DE FONTES*/
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: rgb(119, 18, 124);
+    width: 100vw;
+    height: 6vh;
+    color: aliceblue;
+    font-family: "Raleway", sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.horario {
+display: flex;
+align-items: center;
+margin-right: auto; /*empurra para a esquerda */
+margin-left: 50px;
+text-align: left;
+}
+span.material-icons{
+    margin-right: 10px; /*ajuste conforme necessário*/
+}
+
+
+.rua{
+display: flex;
+align-items: center;
+justify-content: flex-end; /*empurra para a direita*/
+margin-right: 50px; /*empurra para a esquerda */
+text-align: left; /*alinha o texto a esquerda dentro do elemento */
+font-size: medium;
+}
+
+
+
+.menu {
+    background-color: #ede7f61a;
+    width: 100vw;
+    height: 8vh;
+    /*altura*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+    font-size: 20px;
+}
+
+
+.menu a {
+    color: rgb(145, 99, 163);
+    text-decoration: none;
+    Font-family: "Raleway", sans-serif;
+
+
+}
+ .menu a:hover {
+   font-weight: 700;
+   color: rgb(119, 18, 124);
+}
+
+
+
+img{
+    display: none;
+}
+
+.aba{
+    display: none;
+}
+
+@media(max-width:460px){
+    .horario{
+        font-size: 12px;
+        margin-right:25%;
+       
+
+       
+    }
+
+    .rua{
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    header{
+        height: 13vh;
+        width: 125vw;
+    }
+    
+    .menu{
+        width: 125vw;
+        height: 20vh;
+    }
+
+    .menu a {
+        display: none;
+    }
+
+
+    img{
+        display: flex;
+        width: 40%;
+        height: auto;
+        margin-right: 35%;
+    }
+
+    .aba{
+        display: flex;
+        position: fixed;
+        left: 87%;
+        margin-top: 6%;
+        border-radius: 8px;
+        height: 7vh;
+        width: 12%;
+        border: none;
+        background-color: rgb(237,231,246);
+    }
+
+    .aba .material-icons{
+        color: rgb(119, 18, 124);
+        font-size: 40px;
+        display: flex;
+    }
+
+}
